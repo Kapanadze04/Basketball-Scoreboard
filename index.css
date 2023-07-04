@@ -1,0 +1,117 @@
+@import url('https://fonts.cdnfonts.com/css/cursed-timer-ulil');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    font-weight: 400;
+}
+
+/* Colors */
+
+:root {
+    --bgColor: #1B244A;
+    --h1Color: #EEEEEE;
+    --tableBg: #080001;
+    --scoreColor: #F94F6D;
+    --gray: #9AABD8;
+}
+
+/* Colors */
+
+/* General Classes */
+
+.flex { display: flex; }
+
+.flexCenter { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.verdana700 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+}
+
+/* General Classes */
+
+
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    background-color: gray;
+}
+
+.container {
+    width: 800px;
+    height: 400px;
+    background-color: var(--bgColor);
+    align-items: center;
+    justify-content: space-around;
+}
+
+section {
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: var(--h1Color);
+}
+
+.table {
+    width: 200px;
+    height: 125px;
+    margin-bottom: 24px;
+    background: var(--tableBg);
+}
+
+.score {
+    font-size: 90px;
+    color: var(--scoreColor);
+}
+
+.scores {
+    align-items: center;
+    gap: 10px;
+}
+
+.add-score-table {
+    width: 60px;
+    height: 60px;
+    border: 2px solid var(--gray); 
+}
+
+.home-score1,
+.home-score2,
+.home-score3,
+.guest-score1,
+.guest-score2,
+.guest-score3 {
+    font-size: 18px;
+    color: var(--gray);
+}
+
+.clear-scores {
+    position: absolute;
+    margin-top: 360px;
+    border: none;
+    font-size: 24px;
+    background: var(--bgColor);
+    color: var(--scoreColor);
+    padding: 6px 12px;
+}
+
+.add-score-table,
+.clear-scores {
+    cursor: pointer;
+    border-radius: 5px;
+}
