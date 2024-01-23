@@ -46,5 +46,14 @@ guestAdd3.addEventListener("click", function() {
 })
 
 
+function clearScores() {
+    homeScore = 0;
+    homeResult.textContent = 0;
+
+    guestScore = 0;
+    guestResult.textContent = 0;
+}
+
+
 
 
